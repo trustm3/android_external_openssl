@@ -436,7 +436,7 @@ LOCAL_ADDITIONAL_DEPENDENCIES += \$(LOCAL_PATH)/$(basename $output)
     print_vardef_in_mk common_src_files $common_sources
 
     common_includes=$(var_sorted_value OPENSSL_${prefix}_INCLUDES)
-    print_vardef_with_prefix_in_mk common_c_includes external/openssl/ $common_includes
+    print_vardef_with_prefix_in_mk common_c_includes external/openssl_legacy/ $common_includes
 
     for arch in $all_archs; do
       arch_defines=$(var_sorted_value OPENSSL_${prefix}_DEFINES_${arch})

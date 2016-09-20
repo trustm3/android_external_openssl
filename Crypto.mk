@@ -16,6 +16,10 @@ include $(LOCAL_PATH)/android-config.mk
 # Replace cflags with static-specific cflags so we dont build in libdl deps
 LOCAL_CFLAGS_32 := $(openssl_cflags_static_32)
 LOCAL_CFLAGS_64 := $(openssl_cflags_static_64)
+
+# sha256-armv4.S does not compile with clang.
+LOCAL_CLANG_ASFLAGS_arm += -no-integrated-as
+LOCAL_CLANG_ASFLAGS_arm64 += -march=armv8-a+crypt
 include $(BUILD_STATIC_LIBRARY)
 
 #######################################

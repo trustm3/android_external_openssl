@@ -191,13 +191,13 @@ common_src_files := \
   crypto/x509v3/v3_utl.c \
 
 common_c_includes := \
-  external/openssl/. \
-  external/openssl/crypto \
-  external/openssl/crypto/asn1 \
-  external/openssl/crypto/evp \
-  external/openssl/crypto/modes \
-  external/openssl/include \
-  external/openssl/include/openssl \
+  external/openssl_legacy/. \
+  external/openssl_legacy/crypto \
+  external/openssl_legacy/crypto/asn1 \
+  external/openssl_legacy/crypto/evp \
+  external/openssl_legacy/crypto/modes \
+  external/openssl_legacy/include \
+  external/openssl_legacy/include/openssl \
 
 arm_cflags := \
   -DAES_ASM \

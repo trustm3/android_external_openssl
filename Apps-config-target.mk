@@ -71,8 +71,8 @@ common_src_files := \
   apps/x509.c \
 
 common_c_includes := \
-  external/openssl/. \
-  external/openssl/include \
+  external/openssl_legacy/. \
+  external/openssl_legacy/include \
 
 arm_cflags :=
 
