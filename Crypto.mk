@@ -19,7 +19,7 @@ LOCAL_CFLAGS_64 := $(openssl_cflags_static_64)
 
 # sha256-armv4.S does not compile with clang.
 LOCAL_CLANG_ASFLAGS_arm += -no-integrated-as
-LOCAL_CLANG_ASFLAGS_arm64 += -march=armv8-a+crypt
+LOCAL_CLANG_ASFLAGS_arm64 += -no-integrated-as
 include $(BUILD_STATIC_LIBRARY)
 
 #######################################
